@@ -1,0 +1,7 @@
+.idea
+build
+config
+mysql-data
+node-red-data
+plugins
+storage
