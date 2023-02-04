@@ -4,7 +4,7 @@ version: '3.9'
 
 services:
     lynx:
-        image: yuafox/lynx-iberian:2023.1
+        image: yuafox/lynx-iberian:2023.2
         stdin_open: true
         tty: true
         ports:
@@ -18,9 +18,14 @@ services:
             LYNX_USERNAME: lynx
             LYNX_PASSWORD: lynx
             NODERED_HOST: node-red
-            # Add it if you want to use the twitter plugin
-            TWITTER_KEY: 0
-            TWITTER_SECRET: 0
+            # Social media integrations
+            TELEGRAM_TOKEN: "XXX"
+            TELEGRAM_CHAT: "XXX"
+            MASTODON_DOMAIN: "botsin.space"
+            MASTODON_TOKEN: "XXX"
+            # Twitter plugin is currently private
+            TWITTER_KEY: "XXX"
+            TWITTER_SECRET: "XXX"
         depends_on:
             -   mysql
     node-red:
