@@ -32,8 +32,10 @@ services:
             TUMBLR_TOKEN_KEY: "token"
             TUMBLR_TOKEN_SECRET: "token"
 
-            TWITTER_KEY: "token"
-            TWITTER_SECRET: "token"
+            TWITTER_API_KEY: "token"
+            TWITTER_API_SECRET: "token"
+            TWITTER_CLIENT_ID: "access_token"
+            TWITTER_CLIENT_SECRET: "access_token"
         depends_on:
             -   mysql
             
